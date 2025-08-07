@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_532689c00111a62c752ffee23434cec1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_532689c00111a62c752ffee23434cec1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_532689c00111a62c752ffee23434cec1 = L.map(
+                "map_532689c00111a62c752ffee23434cec1",
+                {
+                    center: [36.5, 127.8],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cc9e708fc8c28e46bb7914ade6f4acf3 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_cc9e708fc8c28e46bb7914ade6f4acf3.addTo(map_532689c00111a62c752ffee23434cec1);
+        
+    
+            var circle_c2fccfb351a1b746adf6fbaef8bd71d1 = L.circle(
+                [37.5665, 126.978],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15000.0, "stroke": true, "weight": 3}
+            ).addTo(map_532689c00111a62c752ffee23434cec1);
+        
+    
+        var popup_1084a99e47314bbd35ea763807cac8c4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fee4198cd7f94c9f7e1e81211cb012fa = $(`<div id="html_fee4198cd7f94c9f7e1e81211cb012fa" style="width: 100.0%; height: 100.0%;">서울 (2023): 1,500,000 kg</div>`)[0];
+                popup_1084a99e47314bbd35ea763807cac8c4.setContent(html_fee4198cd7f94c9f7e1e81211cb012fa);
+            
+        
+
+        circle_c2fccfb351a1b746adf6fbaef8bd71d1.bindPopup(popup_1084a99e47314bbd35ea763807cac8c4)
+        ;
+
+        
+    
+    
+            var circle_6874682e15ea3d31f02fe1aa81ab52a0 = L.circle(
+                [35.1796, 129.0756],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9300.0, "stroke": true, "weight": 3}
+            ).addTo(map_532689c00111a62c752ffee23434cec1);
+        
+    
+        var popup_231a22b784d431d45578a24101211576 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4c9bf09c92f8c99efc22674f5069921d = $(`<div id="html_4c9bf09c92f8c99efc22674f5069921d" style="width: 100.0%; height: 100.0%;">부산 (2023): 930,000 kg</div>`)[0];
+                popup_231a22b784d431d45578a24101211576.setContent(html_4c9bf09c92f8c99efc22674f5069921d);
+            
+        
+
+        circle_6874682e15ea3d31f02fe1aa81ab52a0.bindPopup(popup_231a22b784d431d45578a24101211576)
+        ;
+
+        
+    
+    
+            var circle_49402f3fad18f09c93fe8d25ef60523c = L.circle(
+                [35.8722, 128.6025],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7900.0, "stroke": true, "weight": 3}
+            ).addTo(map_532689c00111a62c752ffee23434cec1);
+        
+    
+        var popup_a404f841986df3ebcadfdddaf9d4a06b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cec7b2b08aa5715367ba6403c72b73c2 = $(`<div id="html_cec7b2b08aa5715367ba6403c72b73c2" style="width: 100.0%; height: 100.0%;">대구 (2023): 790,000 kg</div>`)[0];
+                popup_a404f841986df3ebcadfdddaf9d4a06b.setContent(html_cec7b2b08aa5715367ba6403c72b73c2);
+            
+        
+
+        circle_49402f3fad18f09c93fe8d25ef60523c.bindPopup(popup_a404f841986df3ebcadfdddaf9d4a06b)
+        ;
+
+        
+    
+    
+            var circle_46586b939aa3ef1c382e466526c6f1b4 = L.circle(
+                [36.3504, 127.3845],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7700.0, "stroke": true, "weight": 3}
+            ).addTo(map_532689c00111a62c752ffee23434cec1);
+        
+    
+        var popup_173cb71134c6bbcec2ec1b10a909bfec = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_38a0b9cf58210942d62cc2f002f7abd7 = $(`<div id="html_38a0b9cf58210942d62cc2f002f7abd7" style="width: 100.0%; height: 100.0%;">대전 (2023): 770,000 kg</div>`)[0];
+                popup_173cb71134c6bbcec2ec1b10a909bfec.setContent(html_38a0b9cf58210942d62cc2f002f7abd7);
+            
+        
+
+        circle_46586b939aa3ef1c382e466526c6f1b4.bindPopup(popup_173cb71134c6bbcec2ec1b10a909bfec)
+        ;
+
+        
+    
+    
+            var circle_e8a0591b2b7445d996d1feaf7292d9f3 = L.circle(
+                [35.1595, 126.8526],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7200.0, "stroke": true, "weight": 3}
+            ).addTo(map_532689c00111a62c752ffee23434cec1);
+        
+    
+        var popup_b88e17c5570cfffba3e0a0a24c7193a9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fec45077698a16c683e2a1941375c3da = $(`<div id="html_fec45077698a16c683e2a1941375c3da" style="width: 100.0%; height: 100.0%;">광주 (2023): 720,000 kg</div>`)[0];
+                popup_b88e17c5570cfffba3e0a0a24c7193a9.setContent(html_fec45077698a16c683e2a1941375c3da);
+            
+        
+
+        circle_e8a0591b2b7445d996d1feaf7292d9f3.bindPopup(popup_b88e17c5570cfffba3e0a0a24c7193a9)
+        ;
+
+        
+    
+</script>
+</html>
